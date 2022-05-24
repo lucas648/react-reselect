@@ -31,7 +31,7 @@ const calculateTotal = createSelector(
 )
 const mapStateToProps = state =>({
   cart: state,
-  total: calculateTotal(state.items)
+  total: calculateTotal(state)
 });
 
 const mapDispatchToProps = dispatch =>({
